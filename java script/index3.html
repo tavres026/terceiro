@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 20px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>botão 1</h1>
+    <button onclick="clique()">clique aqui</button>
+    <h1>botão 2</h1>
+    <button onclick="iniciou()">começe aqui</button>
+    <script>
+        function clique() {
+            window.alert('vermelho e melhor');
+        }
+
+        function iniciou() {
+            let cor = window.prompt('qual a melhor cor?');
+            window.alert(`Olá, ${cor} vermelho e melhor`);
+        }
+        
+    </script>
+</body>
+
+</html>
