@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 50px;
+            background-color: rgb(213, 144, 144);
+        }
+    </style>
+</head>
+<body>
+    <h1>calculadora</h1>
+    <button onclick="botao()">nome do produto</button>
+    <script>
+        function botao() {
+            let produto = window.prompt('nome do produto');
+            let preço = window.prompt('preço do produto');
+            let dinheiro = window.prompt('pagou quanto em dinheiro?');
+            let troco = dinheiro - preço
+            window.alert(`Você comprou ${produto}, que custa ${preço},00. E recebeu ${troco},00 de troco! volte sempre!`);
+        }
+    </script>
+    
+</body>
+</html>
