@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Idade</title>
+</head>
+<body>
+    <p id="mensagem"></p>
+
+    <script>
+        let idade = prompt("Digite a sua idade:");
+        idade = Number(idade);
+        if (!isNaN(idade)) {
+            if (idade >= 18) {
+                document.getElementById("mensagem").textContent = "Você é maior de idade.";
+            } else {
+                document.getElementById("mensagem").textContent = "Você é menor de idade.";
+            }
+        } else {
+            document.getElementById("mensagem").textContent = "Idade inválida. Por favor, recarregue a página e insira um número.";
+        }
+    </script>
+
+</body>
+</html>
